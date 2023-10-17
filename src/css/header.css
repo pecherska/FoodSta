@@ -1,4 +1,4 @@
-.header {
+/*.header {
   padding: 20px 0;
 }
 
@@ -18,4 +18,45 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+}
+*/
+.logo{
+  width: 66px;
+  height: 52px;
+}
+
+.menu{
+  padding: 0, 16px, 0, 16px;
+}
+.nav{
+  display: flex;
+}
+.nav__list{
+  display: flex;
+}
+.nav__item{
+  margin-right: 28px;
+
+  &:last-child {
+      margin-right: 30px;
+    }
+}
+.header__button{
+  display: inline-block;
+  min-width: 98px;
+  background-color: #BBF330;
+  border-radius: 30px;
+  border: #BBF330;
+  &:hover{
+    background-color: #FFE450;
+    border: #FFE450;
+  }
+}
+.nav__link{
+  color: #2C2C2C;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  &:hover{
+    color: #BBF330;
+  }
 }
