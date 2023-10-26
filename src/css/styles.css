@@ -5,8 +5,9 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+/*@import url('./vite-promo.css');*/
 @import url('./header.css');
+@import url('./hero.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -14,7 +15,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
+  color: #2C2C2C;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -22,4 +23,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
