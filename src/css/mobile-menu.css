@@ -1,0 +1,70 @@
+/* Styles for modal */
+.modal-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.modal-menu {
+  background-color: var(--white);
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  position: absolute;
+  /* find somesimg else, does not work correct */
+  top: 24%;
+  left: 88%;
+  transform: translate(-98%, -38%);
+  /*  */
+  width: 130px;
+  height: 255px;
+  border-radius: 30px 0px 30px 30px;
+}
+
+.modal-menu-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+}
+
+.modal-btn-icon {
+  fill: var(--black);
+}
+
+/* Styles for navigation */
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item-mobile {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.nav-item-mobile:first-child {
+  border-radius: 30px 0px 0px 0px;
+}
+.nav-item-mobile:last-child {
+  border-radius: 0px 0px 30px 30px;
+}
+
+.nav-item-mobile:hover,
+.nav-item-mobile:focus {
+  background-color: var(--btn-green);
+}
+
+.nav-link-mobile {
+  line-height: 1.18;
+}

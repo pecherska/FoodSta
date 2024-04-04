@@ -6,29 +6,54 @@
 */
 @import url('./font.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
-@import url('./hero.css');
+@import url('./mobile-menu.css');
+/*@import url('./hero.css');
 @import url('./about.css');
 @import url('./favorites.css');
 @import url('./reviews.css');
 @import url('./favorites.css');
 @import url('./reviews.css');
-@import url('./subscribe.css');
-@import url('./footer.css');
+@import url('./subscribe.css'); */
 
 :root {
+  /* font */
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* colors */
+
+  --main-yellow: #ffe550;
+  --btn-green: #bbf330;
+  --dark-green: #7eb101;
+  --white: #fefefe;
+  --black: #2c2c2c;
+  --radial-shadow: rgba(47, 88, 63, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
