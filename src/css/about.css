@@ -1,26 +1,47 @@
 .section-bg {
-  margin-top: 50px;
-  background-image: url(../img/BGMobile320.png);
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 63px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
 
-  @media screen and (min-width: 321px) and (max-width: 480px) {
+  background-image: url(../img/BGMobile320.png);
+  top: 50px;
+  @media screen and (min-width: 321px) and (max-width: 767px) {
     background-image: url(../img/BGMobile480.png);
   }
 
-  @media screen and (min-width: 481px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url(../img/BGTablet.png);
-    position: relative;
-    top: -100px;
+    top: -145px;
+
+    /* position: relative;
+    top: -100px; */
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../img/BGDesktop.png);
+    top: -400px;
+    /* position: relative;
+    top: -50px; */
   }
 
   /* background-image: url(../img/BGDesktop.png); */
   /* position: relative;
   top: -370px; */
 }
-
+.img-wrapper {
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+}
 .apple-img {
   /* max-width: 280px; */
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 767px) {
     padding-top: 150px;
     padding-left: 32px;
   }
@@ -30,8 +51,15 @@
   padding-right: 20px; */
 }
 
+.apple-img-hide {
+  display: none;
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    display: block;
+  }
+}
+
 .about-wrapper {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
