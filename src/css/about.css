@@ -15,7 +15,7 @@
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url(../img/BGTablet.png);
-    top: -145px;
+    top: -130px;
 
     /* position: relative;
     top: -100px; */
@@ -23,7 +23,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../img/BGDesktop.png);
-    top: -400px;
+    top: -350px;
     /* position: relative;
     top: -50px; */
   }
@@ -39,11 +39,55 @@
     justify-content: space-evenly;
   }
 }
+
+.img-bg {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    width: 325px;
+    height: 325px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    height: 502px;
+  }
+}
+
+.apple-border {
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  padding: 12px;
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    padding: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    border: 5px solid var(--white);
+
+    padding: 24px;
+  }
+}
 .apple-img {
   /* max-width: 280px; */
+  position: relative;
+  @media screen and (max-width: 767px) {
+    width: 201px;
+    height: 255px;
+    top: -45px;
+  }
   @media screen and (min-width: 767px) {
-    padding-top: 150px;
-    padding-left: 32px;
+    width: 257px;
+    height: 325px;
+    top: -50px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 396px;
+    height: 502px;
+    top: -80px;
   }
 
   /* padding-top: 41px;
@@ -54,15 +98,27 @@
 .apple-img-hide {
   display: none;
   @media screen and (min-width: 767px) and (max-width: 1279px) {
-    display: block;
+    display: flex;
+    position: relative;
+    top: -50px;
+  }
+}
+
+.apple-img-hide .selected {
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    align-self: center;
   }
 }
 
 .about-wrapper {
-  @media screen and (max-width: 767px) {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    padding-top: 110px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
   }
 
   /* @media screen and (min-width: 481px) and (max-width: 1280px) {
@@ -97,6 +153,10 @@
 
   margin-top: 60px;
   margin-bottom: 28px;
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 1.19;
+  }
 }
 
 .about-text {
@@ -105,6 +165,9 @@
   line-height: 1.42;
 
   margin-bottom: 28px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .secondary-title {
@@ -137,6 +200,10 @@
   display: flex;
   align-items: center;
   gap: 4px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .icon-arrow {
   width: 13px;
@@ -147,4 +214,24 @@
   display: flex;
   justify-content: flex-start;
   gap: 24px;
+}
+
+.privilage {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 67px;
+  }
+}
+
+.privilage-item {
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+    padding-top: 32px;
+  }
+}
+
+.about-main-text-conteiner {
+  @media screen and (min-width: 1280px) {
+    width: 527px;
+  }
 }
