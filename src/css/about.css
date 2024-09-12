@@ -153,7 +153,7 @@
 
   margin-top: 60px;
   margin-bottom: 28px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     font-size: 42px;
     line-height: 1.19;
   }
@@ -165,8 +165,10 @@
   line-height: 1.42;
 
   margin-bottom: 28px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
   }
 }
 
@@ -217,21 +219,20 @@
 }
 
 .privilage {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: 67px;
   }
 }
 
 .privilage-item {
-  @media screen and (min-width: 1280px) {
-    padding-top: 40px;
-    padding-top: 32px;
+  @media screen and (min-width: 768px) {
+    width: 253px;
   }
 }
 
 .about-main-text-conteiner {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     width: 527px;
   }
 }
