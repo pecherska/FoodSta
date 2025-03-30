@@ -12,9 +12,10 @@
 @import url('./about.css');
 @import url('./favorites.css');
 @import url('./reviews.css');
-/*@import url('./favorites.css');
-@import url('./reviews.css');
-@import url('./subscribe.css'); */
+/* @import url('./favorites.css');
+@import url('./reviews.css'); */
+@import url('./subscribe.css');
+@import url('./footer.css');
 
 :root {
   /* font */
@@ -42,6 +43,8 @@
 }
 body {
   font-family: var(--main-font);
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .section {

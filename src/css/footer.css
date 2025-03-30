@@ -1,0 +1,196 @@
+.footer {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url(../img/BGfootermpb1x.png);
+
+  /* @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(../img/);
+    top: -15px;
+  } */
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(../img/BGfootertablet1x.png);
+    margin-top: -210px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../img/BGfooterdesktop1x.png);
+    margin-top: -420px;
+  }
+}
+
+.footer-nav-container {
+  display: flex;
+  /* justify-content: flex-start; */
+  gap: 46px;
+  margin-bottom: 40px;
+  /* justify-content: space-between; */
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    gap: 114px;
+  }
+}
+
+.nav-footer {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 28px;
+  }
+
+  /* @media screen and (max-width: 1280px) {
+    flex-direction: row;
+    gap: 148px;
+  } */
+}
+
+.nav-item-footer:hover,
+.nav-item-footer:focus {
+  text-decoration: underline;
+  color: var(--btn-green);
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.subscribe-title-footer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.66;
+  margin-bottom: 12px;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-direction: row;
+    gap: 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 13px;
+  }
+}
+
+.form-footer > input {
+  min-width: 100%;
+  font-size: 12px;
+  height: 42px;
+  border-radius: 30px;
+  border: 0.854px solid var(--main-yellow);
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    min-width: 279px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 279px;
+  }
+}
+
+.form-footer > input::placeholder {
+  padding: 12px;
+  color: #505050;
+}
+
+.subscribe-btn-footer {
+  background: #ffffff;
+  border: 0.854px solid #7eb101;
+  border-radius: 30px;
+
+  height: 35px;
+
+  margin-bottom: 24px;
+
+  max-width: 103px;
+
+  padding: 8px 22px;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.footer-container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* .footer-second-con {
+} */
+
+.footer-action {
+  /* By subscribing you agree to with our Privacy Policy */
+
+  font-size: 10px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+
+  color: #2c2c2c;
+}
+
+.footer-action > a {
+  color: var(--dark-green);
+
+  text-decoration-line: underline;
+}
+
+.footer-list-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  gap: 20px;
+  /* Terms of Service */
+
+  font-size: 10px;
+  line-height: 1.2;
+
+  text-decoration-line: underline;
+
+  color: var(--btn-green);
+}
+
+.footer-right {
+  /* 2022 FoodSta. All right reserved. */
+
+  font-size: 10px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  color: var(--black);
+  text-align: center;
+}
+
+.footer-info {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -55,14 +55,16 @@
 .wrapper-review {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 24px;
   align-items: center;
-  @media screen and (min-width: 769px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
-    gap: 32px;
+    /* gap: 32px; */
   }
   @media screen and (min-width: 1280px) {
     flex-direction: row;
+    justify-content: flex-start;
     gap: 139px;
   }
 }
