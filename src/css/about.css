@@ -7,14 +7,14 @@
   background-position: center;
   background-size: 100% 100%;
 
-  background-image: url(../img/BGMobile320.png);
+  background-image: url(./img/BGMobile320.png);
   top: 50px;
   @media screen and (min-width: 321px) and (max-width: 767px) {
-    background-image: url(../img/BGMobile480.png);
+    background-image: url(./img/BGMobile480.png);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: url(../img/BGTablet.png);
+    background-image: url(./img/BGTablet.png);
     top: -130px;
 
     /* position: relative;
@@ -22,7 +22,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../img/BGDesktop.png);
+    background-image: url(./img/BGDesktop.png);
     top: -350px;
     /* position: relative;
     top: -50px; */
