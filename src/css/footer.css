@@ -15,7 +15,7 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: url(./img/BGfootertablet1x.png);
+    background-image: url(../img/BGfootertablet1x.png);
     margin-top: -210px;
 
     padding-top: 100px;
@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(./img/BGfooterdesktop1x.png);
+    background-image: url(../img/BGfooterdesktop1x.png);
     margin-top: -420px;
   }
 }
