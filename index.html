@@ -13,8 +13,8 @@
     />
     <title>FoodSta</title>
     
-    <script type="module" crossorigin src="/FoodSta/assets/index-59783ce6.js"></script>
-    <link rel="stylesheet" href="/FoodSta/assets/index-7bba1ac0.css">
+    <script type="module" crossorigin src="/FoodSta/assets/index-3a06b395.js"></script>
+    <link rel="stylesheet" href="/FoodSta/assets/index-c4871a91.css">
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -286,16 +286,134 @@
   </div>
 </section>
 
-      
+      <section class="subscribe">
+  <div class="section">
+    <div class="img-wrapper-sub">
+      <img class="subscribe-img" src="../img/banana.png" />
+    </div>
+    <div class="info-wrapper">
+      <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe-info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="form">
+        <input type="text" placeholder="Enter your email" />
+        <button class="subscribe-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
       <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
       <!-- Path to images as from index.html file -->
       <!-- <img src="./img/javascript.svg" alt="" /> -->
     </main>
-    
+    <footer class="footer">
+  <div class="section">
+    <div class="footer-container">
+      <div class="footer-nav-container">
+        <a href="#" class="logo-link-footer">
+          <img
+            class="logo-footer"
+            src="/FoodSta/assets/Vector-1149d8f4.png"
+            alt="FoodSta logo"
+            width="66"
+            height="52"
+          />
+        </a>
+        <nav class="nav-footer">
+          <ul class="nav-list-footer">
+            <li class="nav-item-footer">
+              <a href="#" class="nav-link-footer">Home</a>
+            </li>
+
+            <li class="nav-item-footer">
+              <a href="#" class="nav-link-footer">About</a>
+            </li>
+            <li class="nav-item-footer">
+              <a href="#" class="nav-link-footer">Service</a>
+            </li>
+            <li class="nav-item-footer">
+              <a href="#" class="nav-link-footer">Menu</a>
+            </li>
+            <li class="nav-item-footer">
+              <a href="#" class="nav-link-footer">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-first-con">
+        <h2 class="subscribe-title-footer">Subscribe</h2>
+
+        <form class="form-footer">
+          <input type="text" placeholder="Enter your email" />
+          <button class="subscribe-btn-footer">Subscribe</button>
+        </form>
+
+        <p class="footer-action">
+          By subscribing you agree to with our <a>Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="footer-list-link">
+        <a href="">Privacy Policy</a><a href=""></a>Terms of Service<a href=""
+          >Cookies Settings</a
+        >
+      </div>
+
+      <p class="footer-right">2025 FoodSta. All right reserved.</p>
+    </div>
+  </div>
+</footer>
+
     
     <!-- Loads the specified .html file -->
 
+    <script>
+      (g => {
+        var h,
+          a,
+          k,
+          p = 'The Google Maps JavaScript API',
+          c = 'google',
+          l = 'importLibrary',
+          q = '__ib__',
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement('script'));
+              e.set('libraries', [...r] + '');
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, t => '_' + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set('callback', c + '.maps.' + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + ' could not load.')));
+              a.nonce = m.querySelector('script[nonce]')?.nonce || '';
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + ' only loads once. Ignoring:', g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({
+        key: 'AIzaSyCylRjnvJiokaEvzpzgasP6Maz9R1CL-lU',
+        v: 'weekly',
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
+    </script>
     
   </body>
 </html>
